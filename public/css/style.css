@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.form__error-message {
+    position: absolute;
+    top: -50px;
+    color: red;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form__input {
+    display: block;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.form__input--textarea {
+    resize: none;
+}
+
+.form__btn {
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    padding-right: 30px;
+}
+
+.catalog__title {
+    padding-left: 30px;
+}
+
+.catalog__list {
+    list-style: none;
+}
+
+.catalog__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #eeeeee;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+}
+
+.catalog__item--first:not(:first-child) {
+    margin-top: 20px;
+}
+
+.catalog__container {
+}
+
+.catalog__item-title {
+    display: block;
+    font-weight: 700;
+}
+
+.catalog__item-desc {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.catalog__btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.catalog__btn--edit {
+    background: green;
+}
+
+.catalog__btn--delete {
+    background: red;
+}
